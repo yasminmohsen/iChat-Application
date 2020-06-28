@@ -3,25 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F1153D2F8E01DA319C7AAFC /* Pods_IChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718FB9223FD863FA9CD80C22 /* Pods_IChat.framework */; };
 		CC5BD01124A5245D00062225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BD01024A5245D00062225 /* AppDelegate.swift */; };
 		CC5BD01324A5245D00062225 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BD01224A5245D00062225 /* SceneDelegate.swift */; };
 		CC5BD01524A5245D00062225 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BD01424A5245D00062225 /* ConversationViewController.swift */; };
 		CC5BD01824A5245D00062225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5BD01624A5245D00062225 /* Main.storyboard */; };
 		CC5BD01A24A5246300062225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5BD01924A5246300062225 /* Assets.xcassets */; };
 		CC5BD01D24A5246300062225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5BD01B24A5246300062225 /* LaunchScreen.storyboard */; };
+		CCB8E64824A7A0AF00F954D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCB8E64724A7A0AF00F954D8 /* GoogleService-Info.plist */; };
+		CCB8E64A24A7D07300F954D8 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E64924A7D07300F954D8 /* DatabaseManager.swift */; };
 		CCE5D09624A624E600630415 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE5D09524A624E600630415 /* LoginViewController.swift */; };
 		CCE5D09824A6250100630415 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE5D09724A6250100630415 /* RegisterViewController.swift */; };
 		CCE5D09A24A6252B00630415 /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE5D09924A6252B00630415 /* PhotoViewerViewController.swift */; };
 		CCE5D09C24A6254500630415 /* VedioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE5D09B24A6254500630415 /* VedioPlayerViewController.swift */; };
 		CCE5D09E24A6256C00630415 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE5D09D24A6256C00630415 /* NewConversationViewController.swift */; };
 		CCE5D0A024A6257C00630415 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE5D09F24A6257C00630415 /* ProfileViewController.swift */; };
+		CCE5D0A324A6540F00630415 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE5D0A224A6540F00630415 /* Extensions.swift */; };
+		CCE5D0A524A6994D00630415 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE5D0A424A6994D00630415 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		639ABD1182ECD6CA68CB344A /* Pods-IChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IChat.release.xcconfig"; path = "Target Support Files/Pods-IChat/Pods-IChat.release.xcconfig"; sourceTree = "<group>"; };
+		718FB9223FD863FA9CD80C22 /* Pods_IChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5BD00D24A5245D00062225 /* IChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5BD01024A5245D00062225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC5BD01224A5245D00062225 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,12 +37,17 @@
 		CC5BD01924A5246300062225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC5BD01C24A5246300062225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC5BD01E24A5246300062225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB8E64724A7A0AF00F954D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CCB8E64924A7D07300F954D8 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		CCE5D09524A624E600630415 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CCE5D09724A6250100630415 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CCE5D09924A6252B00630415 /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
 		CCE5D09B24A6254500630415 /* VedioPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VedioPlayerViewController.swift; sourceTree = "<group>"; };
 		CCE5D09D24A6256C00630415 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		CCE5D09F24A6257C00630415 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CCE5D0A224A6540F00630415 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CCE5D0A424A6994D00630415 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		E44B6869FCBA39DA6B26A8D5 /* Pods-IChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IChat.debug.xcconfig"; path = "Target Support Files/Pods-IChat/Pods-IChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F1153D2F8E01DA319C7AAFC /* Pods_IChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25CA5DF6B161E907C687E7B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				718FB9223FD863FA9CD80C22 /* Pods_IChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E5D57E4D3CF2A1D00EA983E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E44B6869FCBA39DA6B26A8D5 /* Pods-IChat.debug.xcconfig */,
+				639ABD1182ECD6CA68CB344A /* Pods-IChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CC5BD00424A5245D00062225 = {
 			isa = PBXGroup;
 			children = (
 				CC5BD00F24A5245D00062225 /* IChat */,
 				CC5BD00E24A5245D00062225 /* Products */,
+				2E5D57E4D3CF2A1D00EA983E /* Pods */,
+				25CA5DF6B161E907C687E7B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +100,7 @@
 		CC5BD00F24A5245D00062225 /* IChat */ = {
 			isa = PBXGroup;
 			children = (
+				CCB8E64724A7A0AF00F954D8 /* GoogleService-Info.plist */,
 				CCE5D09324A623B900630415 /* Resources */,
 				CCE5D09224A623A800630415 /* ViewModels */,
 				CCE5D09124A6239600630415 /* Models */,
@@ -82,8 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				CC5BD01424A5245D00062225 /* ConversationViewController.swift */,
-				CCE5D09524A624E600630415 /* LoginViewController.swift */,
-				CCE5D09724A6250100630415 /* RegisterViewController.swift */,
+				CCE5D0A124A62A9900630415 /* Login */,
 				CCE5D09924A6252B00630415 /* PhotoViewerViewController.swift */,
 				CCE5D09B24A6254500630415 /* VedioPlayerViewController.swift */,
 				CCE5D09D24A6256C00630415 /* NewConversationViewController.swift */,
@@ -121,6 +153,9 @@
 			children = (
 				CC5BD01024A5245D00062225 /* AppDelegate.swift */,
 				CC5BD01224A5245D00062225 /* SceneDelegate.swift */,
+				CCE5D0A224A6540F00630415 /* Extensions.swift */,
+				CCE5D0A424A6994D00630415 /* ImagePicker.swift */,
+				CCB8E64924A7D07300F954D8 /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -133,6 +168,15 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		CCE5D0A124A62A9900630415 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CCE5D09524A624E600630415 /* LoginViewController.swift */,
+				CCE5D09724A6250100630415 /* RegisterViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC5BD02124A5246300062225 /* Build configuration list for PBXNativeTarget "IChat" */;
 			buildPhases = (
+				0DF43FA362DDFBFD6E705826 /* [CP] Check Pods Manifest.lock */,
 				CC5BD00924A5245D00062225 /* Sources */,
 				CC5BD00A24A5245D00062225 /* Frameworks */,
 				CC5BD00B24A5245D00062225 /* Resources */,
+				302D4C15D69AB0F7C98D8A71 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,12 +238,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC5BD01D24A5246300062225 /* LaunchScreen.storyboard in Resources */,
+				CCB8E64824A7A0AF00F954D8 /* GoogleService-Info.plist in Resources */,
 				CC5BD01A24A5246300062225 /* Assets.xcassets in Resources */,
 				CC5BD01824A5245D00062225 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DF43FA362DDFBFD6E705826 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		302D4C15D69AB0F7C98D8A71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC5BD00924A5245D00062225 /* Sources */ = {
@@ -209,7 +298,10 @@
 				CCE5D09E24A6256C00630415 /* NewConversationViewController.swift in Sources */,
 				CCE5D09C24A6254500630415 /* VedioPlayerViewController.swift in Sources */,
 				CC5BD01524A5245D00062225 /* ConversationViewController.swift in Sources */,
+				CCE5D0A324A6540F00630415 /* Extensions.swift in Sources */,
 				CC5BD01124A5245D00062225 /* AppDelegate.swift in Sources */,
+				CCE5D0A524A6994D00630415 /* ImagePicker.swift in Sources */,
+				CCB8E64A24A7D07300F954D8 /* DatabaseManager.swift in Sources */,
 				CCE5D0A024A6257C00630415 /* ProfileViewController.swift in Sources */,
 				CC5BD01324A5245D00062225 /* SceneDelegate.swift in Sources */,
 				CCE5D09A24A6252B00630415 /* PhotoViewerViewController.swift in Sources */,
@@ -354,6 +446,7 @@
 		};
 		CC5BD02224A5246300062225 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E44B6869FCBA39DA6B26A8D5 /* Pods-IChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -371,6 +464,7 @@
 		};
 		CC5BD02324A5246300062225 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 639ABD1182ECD6CA68CB344A /* Pods-IChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
