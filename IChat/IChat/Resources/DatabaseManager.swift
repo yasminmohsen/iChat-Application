@@ -65,7 +65,7 @@ extension DatabaseManager {
                         if var userCollection=snapshot.value as?[[String:String]]{
                             let newUser=[
                             
-                                "name" :user.firstName + "" + user.lastName ,
+                                "name" :user.firstName + " " + user.lastName ,
                                 "safeEmail" : user.safeEmail
                             ]
                             
@@ -112,6 +112,30 @@ extension DatabaseManager {
             
     }
     
+    
+    
+    public func getallUser (completion:@escaping (Result<[[String:String]], Error>)->Void){
+        
+        database.child("users").observeSingleEvent(of: .value, with: {snapshot in
+        
+        
+            guard let value = snapshot.value as?[[String:String]] else {
+                completion(.failure(DatabaseError.failedToFetch))
+                return
+            }
+            
+            
+            completion(.success(value))
+            
+        })
+        
+        
+    }
+    public enum DatabaseError :Error{
+          
+          case failedToFetch
+       
+      }
 }
 
 
