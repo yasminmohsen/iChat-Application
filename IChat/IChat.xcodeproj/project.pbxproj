@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F1153D2F8E01DA319C7AAFC /* Pods_IChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718FB9223FD863FA9CD80C22 /* Pods_IChat.framework */; };
+		CC0BA54124A8D0A5000D6105 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BA54024A8D0A5000D6105 /* StorageManager.swift */; };
 		CC5BD01124A5245D00062225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BD01024A5245D00062225 /* AppDelegate.swift */; };
 		CC5BD01324A5245D00062225 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BD01224A5245D00062225 /* SceneDelegate.swift */; };
 		CC5BD01524A5245D00062225 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BD01424A5245D00062225 /* ConversationViewController.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		639ABD1182ECD6CA68CB344A /* Pods-IChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IChat.release.xcconfig"; path = "Target Support Files/Pods-IChat/Pods-IChat.release.xcconfig"; sourceTree = "<group>"; };
 		718FB9223FD863FA9CD80C22 /* Pods_IChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0BA54024A8D0A5000D6105 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		CC5BD00D24A5245D00062225 /* IChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5BD01024A5245D00062225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC5BD01224A5245D00062225 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				CCE5D0A224A6540F00630415 /* Extensions.swift */,
 				CCE5D0A424A6994D00630415 /* ImagePicker.swift */,
 				CCB8E64924A7D07300F954D8 /* DatabaseManager.swift */,
+				CC0BA54024A8D0A5000D6105 /* StorageManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				CCE5D09624A624E600630415 /* LoginViewController.swift in Sources */,
 				CCE5D09824A6250100630415 /* RegisterViewController.swift in Sources */,
 				CCE5D09E24A6256C00630415 /* NewConversationViewController.swift in Sources */,
+				CC0BA54124A8D0A5000D6105 /* StorageManager.swift in Sources */,
 				CCE5D09C24A6254500630415 /* VedioPlayerViewController.swift in Sources */,
 				CC5BD01524A5245D00062225 /* ConversationViewController.swift in Sources */,
 				CCE5D0A324A6540F00630415 /* Extensions.swift in Sources */,

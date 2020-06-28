@@ -357,8 +357,31 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
               }
               else if authResult != nil {
                 
-                
-                DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: self.firstNameField.text!, lastName: self.lastNameField.text!, email: self.emailField.text!, profilePic: ""))
+                let chatUser = ChatAppUser(firstName: self.firstNameField.text!, lastName: self.lastNameField.text!, email: self.emailField.text!)
+                DatabaseManager.shared.insertUser(with : chatUser, completion: { success in
+                    if success {
+                        
+                        guard  let image = self.imageView.image ,
+                            let data = image.pngData()
+                            else {
+                            return
+                        }
+                        let fileName=chatUser.profilePictureFileName
+                        StorageManager.shared.uploadProfilePicture(with: data, fileName: fileName, completion: { result in
+                            
+                            switch result{
+                            
+                            case .success(let downloadUrl):
+                                print(downloadUrl)
+                            case .failure(let error):
+                                
+                                print("error is :\(error) ")
+                            }
+                            
+                        })
+                    }
+                    
+                })
                 
                 DispatchQueue.main.async {
                                       self.spinner.dismiss()

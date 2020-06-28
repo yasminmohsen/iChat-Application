@@ -14,20 +14,12 @@ final class DatabaseManager {
     static let shared=DatabaseManager()
     private let database=Database.database().reference()
     
-    
-}
-struct ChatAppUser {
-    let firstName:String
-    let lastName:String
-    let email:String
-    let profilePic:String
-    
-    var safeEmail: String{
-        
-        var safeEmail=email.replacingOccurrences(of: ".", with: "-")
-         safeEmail=safeEmail.replacingOccurrences(of: "@", with: "-")
-        return safeEmail
-    }
+    static func safeEmail(email :String)->String{
+          
+          var safeEmail=email.replacingOccurrences(of: ".", with: "-")
+                 safeEmail=safeEmail.replacingOccurrences(of: "@", with: "-")
+                return safeEmail
+      }
     
 }
 
@@ -52,14 +44,94 @@ extension DatabaseManager {
     
     
     
-    public func insertUser(with user:ChatAppUser){
+    public func insertUser(with user:ChatAppUser ,completion :@escaping (Bool)->Void){
           
             database.child(user.safeEmail).setValue([
                 "first_name":user.firstName ,
                 "last_name": user.lastName
             
-            ])
+                ], withCompletionBlock: {error ,_ in
+                    
+                    guard error == nil else{
+                         print (" failed to write data to firebase")
+                        completion(false)
+                      return
+                    }
+                    
+                    // to add users in collection of users :
+                    
+                    self.database.child("users").observeSingleEvent(of: .value, with: {snapshot in
+                        
+                        if var userCollection=snapshot.value as?[[String:String]]{
+                            let newUser=[
+                            
+                                "name" :user.firstName + "" + user.lastName ,
+                                "safeEmail" : user.safeEmail
+                            ]
+                            
+                            userCollection.append(newUser)
+                            
+                            self.database.child("users").setValue(userCollection,withCompletionBlock: {error,_ in
+                                
+                                guard error == nil else{
+                                    completion(false)
+                                    return
+                                }
+                                
+                                 completion(true)
+                            })
+                            //append users in the array
+                            
+                        }
+                        else{
+                            //create new array
+                            let newCollection:[[String:String]] = [
+                            [
+                                "name" :user.firstName + " " + user.lastName ,
+                                "safeEmail" : user.safeEmail
+                            
+                            ]
+                            ]
+                            self.database.child("users").setValue(newCollection,withCompletionBlock: {error,_ in
+                                
+                                guard error == nil else{
+                                    completion(false)
+                                    return
+                                }
+                                
+                                 completion(true)
+                            })
+                        }
+                        
+                        
+                    })
+                    
+                    
+                   
+            })
             
     }
     
+}
+
+
+struct ChatAppUser {
+    let firstName:String
+    let lastName:String
+    let email:String
+    
+    var safeEmail: String{
+        
+        var safeEmail=email.replacingOccurrences(of: ".", with: "-")
+         safeEmail=safeEmail.replacingOccurrences(of: "@", with: "-")
+        return safeEmail
+    }
+    
+    var profilePictureFileName :String {
+        
+        return "\(safeEmail)_profile_picture.png"
+    }
+    
+    
+  
 }
