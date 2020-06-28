@@ -8,10 +8,12 @@
 
 import UIKit
 import FirebaseAuth
+import JGProgressHUD
 
 class LoginViewController: UIViewController ,UITextFieldDelegate{
     
     
+    private let spinner=JGProgressHUD(style: .dark)
     private let scrollView:UIScrollView = {
         
        let scrollView=UIScrollView()
@@ -203,6 +205,9 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         
         else{
             
+            
+            spinner.show(in: view)
+            
             login(email: emailField.text!, password: passwordField.text!)
         }
        }
@@ -238,11 +243,19 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
                 }
                    if authResult != nil {
                        print ("Successful login")
+                    DispatchQueue.main.async {
+                        strongSelf.spinner.dismiss()
+                    }
                     
                   strongSelf.navigationController?.dismiss(animated: true, completion: nil)
                    }
                    else {
+                    DispatchQueue.main.async {
+                                          strongSelf.spinner.dismiss()
+                                      }
+                                      
                     print ("fail")
+                    strongSelf.alert(message: "invalid information")
                    }
                }
            }

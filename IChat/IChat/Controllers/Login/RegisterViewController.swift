@@ -8,10 +8,10 @@
 
 import UIKit
 import FirebaseAuth
+import JGProgressHUD
 
 class RegisterViewController: UIViewController, UITextFieldDelegate {
-    
-    
+   private let spinner=JGProgressHUD(style: .dark)
     var imagePicker: ImagePicker!
     private let scrollView:UIScrollView = {
         
@@ -300,6 +300,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                 
             }
             
+            spinner.show(in: view)
+            
             signUp(email: emailField.text!, password: passwordField.text!)
            
         }
@@ -357,6 +359,10 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                 
                 
                 DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: self.firstNameField.text!, lastName: self.lastNameField.text!, email: self.emailField.text!, profilePic: ""))
+                
+                DispatchQueue.main.async {
+                                      self.spinner.dismiss()
+                                  }
                   self.navigationController?.dismiss(animated: true, completion: nil)
                print("UserCreated")
               }

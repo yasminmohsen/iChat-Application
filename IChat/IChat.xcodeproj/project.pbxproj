@@ -16,6 +16,7 @@
 		CC5BD01D24A5246300062225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5BD01B24A5246300062225 /* LaunchScreen.storyboard */; };
 		CCB8E64824A7A0AF00F954D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCB8E64724A7A0AF00F954D8 /* GoogleService-Info.plist */; };
 		CCB8E64A24A7D07300F954D8 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E64924A7D07300F954D8 /* DatabaseManager.swift */; };
+		CCB8E64C24A81B8900F954D8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E64B24A81B8900F954D8 /* ChatViewController.swift */; };
 		CCE5D09624A624E600630415 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE5D09524A624E600630415 /* LoginViewController.swift */; };
 		CCE5D09824A6250100630415 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE5D09724A6250100630415 /* RegisterViewController.swift */; };
 		CCE5D09A24A6252B00630415 /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE5D09924A6252B00630415 /* PhotoViewerViewController.swift */; };
@@ -39,6 +40,7 @@
 		CC5BD01E24A5246300062225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCB8E64724A7A0AF00F954D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCB8E64924A7D07300F954D8 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		CCB8E64B24A81B8900F954D8 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		CCE5D09524A624E600630415 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CCE5D09724A6250100630415 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CCE5D09924A6252B00630415 /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				CCE5D09B24A6254500630415 /* VedioPlayerViewController.swift */,
 				CCE5D09D24A6256C00630415 /* NewConversationViewController.swift */,
 				CCE5D09F24A6257C00630415 /* ProfileViewController.swift */,
+				CCB8E64B24A81B8900F954D8 /* ChatViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				CC5BD01124A5245D00062225 /* AppDelegate.swift in Sources */,
 				CCE5D0A524A6994D00630415 /* ImagePicker.swift in Sources */,
 				CCB8E64A24A7D07300F954D8 /* DatabaseManager.swift in Sources */,
+				CCB8E64C24A81B8900F954D8 /* ChatViewController.swift in Sources */,
 				CCE5D0A024A6257C00630415 /* ProfileViewController.swift in Sources */,
 				CC5BD01324A5245D00062225 /* SceneDelegate.swift in Sources */,
 				CCE5D09A24A6252B00630415 /* PhotoViewerViewController.swift in Sources */,
