@@ -11,7 +11,7 @@ import JGProgressHUD
 
 class NewConversationViewController: UIViewController {
 
-    
+    public var completion: (([String:String])->Void)?
     private let spinner = JGProgressHUD(style: .dark)
     private let searchbar :UISearchBar = {
        let searchbar = UISearchBar()
@@ -183,6 +183,13 @@ extension NewConversationViewController :UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
+        //after choosing one user :
+        let targetUer=results[indexPath.row]
+        
+        dismiss(animated: true) {
+            self.completion?(targetUer)
+        }
+        
     }
     
     

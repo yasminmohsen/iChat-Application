@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F1153D2F8E01DA319C7AAFC /* Pods_IChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718FB9223FD863FA9CD80C22 /* Pods_IChat.framework */; };
+		CC07F77324AA85D900037DB5 /* ConversationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC07F77224AA85D900037DB5 /* ConversationsTableViewCell.swift */; };
 		CC0BA54124A8D0A5000D6105 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BA54024A8D0A5000D6105 /* StorageManager.swift */; };
 		CC5BD01124A5245D00062225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BD01024A5245D00062225 /* AppDelegate.swift */; };
 		CC5BD01324A5245D00062225 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BD01224A5245D00062225 /* SceneDelegate.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		639ABD1182ECD6CA68CB344A /* Pods-IChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IChat.release.xcconfig"; path = "Target Support Files/Pods-IChat/Pods-IChat.release.xcconfig"; sourceTree = "<group>"; };
 		718FB9223FD863FA9CD80C22 /* Pods_IChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC07F77224AA85D900037DB5 /* ConversationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsTableViewCell.swift; sourceTree = "<group>"; };
 		CC0BA54024A8D0A5000D6105 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		CC5BD00D24A5245D00062225 /* IChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5BD01024A5245D00062225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				CCE5D09424A623D900630415 /* Storyboards */,
 				CC5BD01924A5246300062225 /* Assets.xcassets */,
 				CC5BD01B24A5246300062225 /* LaunchScreen.storyboard */,
+				CC07F77224AA85D900037DB5 /* ConversationsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				CCE5D0A324A6540F00630415 /* Extensions.swift in Sources */,
 				CC5BD01124A5245D00062225 /* AppDelegate.swift in Sources */,
 				CCE5D0A524A6994D00630415 /* ImagePicker.swift in Sources */,
+				CC07F77324AA85D900037DB5 /* ConversationsTableViewCell.swift in Sources */,
 				CCB8E64A24A7D07300F954D8 /* DatabaseManager.swift in Sources */,
 				CCB8E64C24A81B8900F954D8 /* ChatViewController.swift in Sources */,
 				CCE5D0A024A6257C00630415 /* ProfileViewController.swift in Sources */,
