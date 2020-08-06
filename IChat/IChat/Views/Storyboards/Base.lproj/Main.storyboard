@@ -93,19 +93,20 @@
         <!--Tab Bar Controller-->
         <scene sceneID="iHo-OT-ydS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sxX-2S-Rx2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="iNI-fC-RJC" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sST-cV-HXe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.51764705882352935" green="0.74117647058823533" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="1" green="0.94117647059999998" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="ucE-gv-7dX" kind="relationship" relationship="viewControllers" id="yEG-h8-dXe"/>
                         <segue destination="R2r-l8-MQL" kind="relationship" relationship="viewControllers" id="VMO-JV-5UN"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sxX-2S-Rx2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="-751"/>
         </scene>
